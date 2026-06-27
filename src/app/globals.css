@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f9f8f6;
+  --foreground: #444040;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
